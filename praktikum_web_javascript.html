@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Interaktif</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #kotakAnimasi {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 20px auto;
+            transition: all 0.5s ease;
+        }
+
+        #kotakAnimasi.grow {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+
+
+        /* .kotak {
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            margin: 20px auto;
+            border-radius: 10px;
+            cursor: pointer;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Interactive Web!</h1>
+    <button id="tombolKlik">Click Me</button>
+    <p id="teks">Halo, dunia!</p>
+
+    <!-- Tambahkan form di HTML -->
+    <form id="formNama">
+        <label for="nama">Enter Your Roles:</label>
+        <input type="text" id="nama" name="nama">
+        <button type="submit">Submit</button>
+    </form>
+    <p id="pesan"></p>
+
+    <!-- Tambahkan elemen div dengan ID "kotakAnimasi" -->
+    <div id="kotakAnimasi"></div>
+
+
+    <!-- <div class="kotak">
+        <h2>Kotak 1</h2>
+        <p>You've been clicked the Kotak. It's your DIV.</p>
+    </div> -->
+
+    <!-- Tambahkan tombol dan area hasil di HTML -->
+    <button id="ambilData">Fetch User Data Lur...</button>
+    <div id="hasil"></div>
+
+
+
+    <script src="praktikum_web_js.js"></script>
+</body>
+
+</html>
